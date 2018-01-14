@@ -1,0 +1,34 @@
+{
+    "name": "johnhhorton/componentphp",
+    "authors": [
+        {
+            "name": "John H Horton",
+            "email": "johnhhorton@outlook.com"
+        }
+    ],
+    "description": "Component based PHP templating engine",
+    "keywords": [
+        "php",
+        "component",
+        "template"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "johnhhorton\\ComponentPHP\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "scripts":{
+        "test": [
+            "phpunit --bootstrap vendor/autoload.php tests"
+        ]
+    }
+}
